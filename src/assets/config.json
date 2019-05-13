@@ -1,0 +1,15 @@
+{
+  "entry": {
+    "main": [
+      "./js/main.js",
+      "./scss/main.scss"
+    ]
+  },
+  "publicPath": "/",
+  "devUrl": "http://caregivers.listing",
+  "proxyUrl": "http://localhost:3000",
+  "cacheBusting": false,
+  "watch": [
+    "**/*.html"
+  ]
+}
