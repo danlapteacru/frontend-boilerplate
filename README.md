@@ -23,24 +23,23 @@ During theme installation you will have configure Browsersync.
 ## Theme structure
 
 ```shell
-your-theme-name/   # → Root of your based theme
-├── dist/                 # → Built theme assets (never edit)
-├── node_modules/         # → Node.js packages (never edit)
-├── package.json          # → Node.js dependencies and scripts
-├── src/            # → Theme assets and templates
-│   └── assets/           # → Front-end assets
-│      ├── config.json   # → Settings for compiled assets
-│      ├── build/        # → Webpack and ESLint config
-│      ├── fonts/        # → Theme fonts
-│      ├── images/       # → Theme images
-│      ├── js/           # → Theme JS
-└──────└── scss/        # → Theme stylesheets
+your-theme-name/            # → Root of your based theme
+├── dist/                   # → Built theme assets (never edit)
+├── node_modules/           # → Node.js packages (never edit)
+├── package.json            # → Node.js dependencies and scripts
+├── src/                    # → Front-end assets
+│   ├── config.json         # → Settings for compiled assets
+│   ├── build/              # → Webpack and ESLint config
+│   ├── fonts/              # → Theme fonts
+│   ├── images/             # → Theme images
+│   ├── js/                 # → Theme JS
+└───└── scss/               # → Theme stylesheets
 ```
 
 ## Theme development
 
 * Run `yarn` from the theme directory to install dependencies
-* Update `src/assets/config.json` settings:
+* Update `src/config.json` settings:
   * `devUrl` should reflect your local development hostname
 
 ### Build commands

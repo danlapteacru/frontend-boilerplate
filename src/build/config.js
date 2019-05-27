@@ -17,7 +17,7 @@ const config = merge({
   proxyUrl: 'http://localhost:3000',
   paths: {
     root: rootPath,
-    assets: path.join(rootPath, 'src/assets'),
+    assets: path.join(rootPath, 'src'),
     dist: path.join(rootPath, 'dist'),
   },
   enabled: {
@@ -30,7 +30,7 @@ const config = merge({
 
 module.exports = merge(config, {
   env: Object.assign({ production: isProduction, development: !isProduction }, argv.env),
-  publicPath: `${config.publicPath}/${path.basename(config.paths.dist)}/`,
+  publicPath: `${config.publicPath}${path.basename(config.paths.dist)}/`,
   manifest: {},
 });
 

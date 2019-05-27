@@ -23,14 +23,14 @@
     "opera 12"
   ],
   "scripts": {
-    "build": "webpack --progress --config src/assets/build/webpack.config.js",
-    "build:production": "webpack --env.production --progress --config src/assets/build/webpack.config.js",
-    "build:profile": "webpack --progress --profile --json --config src/assets/build/webpack.config.js",
-    "start": "webpack --hide-modules --watch --config src/assets/build/webpack.config.js",
+    "build": "webpack --progress --config src/build/webpack.config.js",
+    "build:production": "webpack --env.production --progress --config src/build/webpack.config.js",
+    "build:profile": "webpack --progress --profile --json --config src/build/webpack.config.js",
+    "start": "webpack --hide-modules --watch --config src/build/webpack.config.js",
     "rmdist": "rimraf dist",
     "lint": "npm run -s lint:js && npm run -s lint:css",
-    "lint:js": "eslint src/assets/js src/assets/build",
-    "lint:css": "stylelint \"src/assets/scss/**/*.{css,sass,scss,sss,less}\"",
+    "lint:js": "eslint src/js src/build",
+    "lint:css": "stylelint \"src/scss/**/*.{css,sass,scss,sss,less}\"",
     "test": "npm run -s lint"
   },
   "engines": {

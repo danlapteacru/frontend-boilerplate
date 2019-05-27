@@ -6,7 +6,7 @@
     ]
   },
   "publicPath": "/",
-  "devUrl": "http://caregivers.listing",
+  "devUrl": "http://my-awesome-project.dev",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": false,
   "watch": [
